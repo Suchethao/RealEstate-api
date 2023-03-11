@@ -1,0 +1,20 @@
+{
+    "1": {
+      "name": "Log Cabin",
+      "password": "password1",
+      "occupied": 'False',
+      "id": 1
+    },
+    "2": {
+      "name": "Beach Shack",
+      "password": "password3",
+      "occupied": 'False',
+      "id": 2
+    },
+    "3": {
+      "name": "High Rise",
+      "password": "password2",
+      "occupied": 'True',
+      "id": 6
+    }
+  }
