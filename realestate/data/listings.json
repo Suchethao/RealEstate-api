@@ -1,20 +1,25 @@
 {
-    "1": {
+  "listings":[
+    {
       "name": "Log Cabin",
-      "password": "password1",
-      "occupied": 'False',
+      "address": "password1",
+      "zip code":"11233",
+      "dog parks": [],
       "id": 1
     },
-    "2": {
+    {
       "name": "Beach Shack",
       "password": "password3",
-      "occupied": 'False',
+      "zip code":"11236",
+      "dog parks": [],
       "id": 2
     },
-    "3": {
+ {
       "name": "High Rise",
       "password": "password2",
-      "occupied": 'True',
+      "zip code":"11360",
+      "dog parks": [],
       "id": 6
     }
+  ]
   }
