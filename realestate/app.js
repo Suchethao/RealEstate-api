@@ -7,7 +7,11 @@ const app = express();
 const router = express.Router();
 
 app.use(express.json());
-
+/**
+* @api {get}/airbnb Get Airbnbs Information
+* @apiName GetAirbnbs
+* @apiGroup Airbnbs
+**/
 app.get('/', async (req, res) =>{
     return res.redirect('/airbnb')
     // return res.json({ message: "Hello, World ✌️" });

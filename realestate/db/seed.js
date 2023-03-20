@@ -1,15 +1,20 @@
 import {assert} from 'console'
 import mongoose from 'mongoose'
-import DogparkSchema from '../models/DogParkSchema.js'
+import Dogpark from '../models/DogParkSchema.js'
 import Airbnb from '../models/AirbnbSchema.js' 
-import Dogpark from './dogpark.json' assert { type: "json" }
+import dogparkdata from './dogpark.json' assert { type: "json" }
 import airbnbData from'./airbnb.json' assert { type: "json" }
 
+mongoose.connect('mongodb://127.0.0.1:27017/realestate', { useNewUrlParser: true }).then(
+    () => {
+      console.log("Database successfully connected");
+    }
+)
 async function seedDate() {
   await Airbnb.deleteMany({});
   await Dogpark.deleteMany({});
   await Airbnb.create(airbnbData);
-  await Dogpark.create(dogparkData);
+  await Dogpark.create(dogparkdata);
   process.exit();
 }
 
